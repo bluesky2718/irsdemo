@@ -1,0 +1,229 @@
+.datanow{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 9000;
+}
+.btn-primary{
+    background: #70b900;
+}
+.btn-primary:hover{
+    background-color: #5a9c00;
+}
+.btn-warning{
+    background: #3d97e1;
+}
+.btn-warning:hover{
+    background-color: #2c81ba;
+}
+.btn-info{
+    background: #fcb700;
+}
+.btn-info:hover{
+    background-color: #d99a02;
+}
+.small-box {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+    width: 290px;
+    height: 110px;
+    color: #fff;
+}
+.small-box > .inner {
+  padding: 15px;
+    position: absolute;
+    z-index: 100;
+}
+.small-box h3 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  white-space: nowrap;
+  padding: 0;
+}
+.small-box p {
+  font-size: 15px;
+    margin-top: 10px;
+}
+.small-box p > small {
+  display: block;
+  color: #f9f9f9;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.small-box h3,
+.small-box p {
+  z-index: 5;
+}
+.btn-primary .icon {
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    right: 25px;
+    font-size: 70px;
+    z-index: 1;
+}
+.btn-info .icon {
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    right: 35px;
+    font-size: 90px;
+}
+.btn-warning .icon {
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    right: 25px;
+    font-size: 60px;
+}
+.small-box .icon {
+  z-index: 0;
+  color: rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover .icon {
+    -webkit-animation: an1 .5s ease forwards;
+    -o-animation: an1 .5s ease forwards;
+    -moz-animation: an1 .5s ease forwards;
+    animation: an1 .5s ease forwards;
+}
+.btn-info:hover .icon {
+    -webkit-animation: an2 .5s ease forwards;
+    -o-animation: an2 .5s ease forwards;
+    -moz-animation: an2 .5s ease forwards;
+    animation: an2 .5s ease forwards;
+}
+.btn-warning:hover .icon {
+    -webkit-animation: an3 .5s ease forwards;
+    -o-animation: an3 .5s ease forwards;
+    -moz-animation: an3 .5s ease forwards;
+    animation: an3 .5s ease forwards;
+}
+@keyframes an1 {
+  from {
+    font-size: 70px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+@-webkit-keyframes an1 {
+  from {
+    font-size: 70px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+@-ms-keyframes an1 {
+    from {
+        font-size: 70px;
+    }
+    to {
+        font-size: 80px;
+    }
+}
+
+@-moz-keyframes an1 {
+    from {
+        font-size: 70px;
+    }
+    to {
+        font-size: 80px;
+    }
+}
+@-o-keyframes an1 {
+    from {
+        font-size: 70px;
+    }
+    to {
+        font-size: 80px;
+    }
+}
+
+@keyframes an2 {
+    from {
+        font-size: 90px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+@-webkit-keyframes an2 {
+    from {
+        font-size: 90px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+@-ms-keyframes an2 {
+    from {
+        font-size: 90px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+
+@-moz-keyframes an2 {
+    from {
+        font-size: 90px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+@-o-keyframes an2 {
+    from {
+        font-size: 90px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+
+@keyframes an3 {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 70px;
+    }
+}
+@-webkit-keyframes an3 {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 70px;
+    }
+}
+@-ms-keyframes an3 {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 70px;
+    }
+}
+@-moz-keyframes an3 {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 70px;
+    }
+}
+@-o-keyframes an3 {
+    from {
+        font-size: 60px;
+    }
+    to {
+        font-size: 70px;
+    }
+}
+
+
+

@@ -1,0 +1,618 @@
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none
+}
+
+
+a img {
+    border: 0
+}
+
+body {
+    color: #333;
+    font: 12px "Microsoft Yahei";
+}
+
+ul, ol, li {
+    list-style-type: none;
+    vertical-align: 0
+}
+.resources-board {
+    border-bottom: 1px solid #eee;
+    background-color: #fafafa !important;
+}
+.resources-board-inner{
+    width: 1100px;
+    margin: 0 auto;
+    background: url("../images/dashborad-bg.png") no-repeat right;
+    height: 180px;
+}
+.resourcesBox {
+    width: 1100px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.resources {
+    width: 700px;
+    position: relative;
+    border:1px solid #e9e9e9;
+    background: #fafafa;
+}
+.scollBox{
+    background: #fff;
+}
+.btn-pre{
+    width: 660px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn-pre span.btn {
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: url("../images/sorting.png") no-repeat;
+    display: block;
+}
+.btn-pre span.btn i{
+    font-size: 30px;
+    color: #bbb;
+}
+.btn-pre span.btn i:hover{
+    font-size: 30px;
+    color: #aaa;
+}
+.btn-pre span.prev {
+    left: 0;
+    background-position: 0 -175px;
+}
+.btn-pre span.prev:hover {
+    left: 0;
+    background-position: 1px -86px;
+}
+.btn-pre span.next {
+    right: 0;
+    background-position: 0 -216px;
+}
+.btn-pre span.next:hover {
+    right: 0;
+    background-position: 1px -127px;
+}
+.resources li {
+    float: left;
+}
+#listBox ul.cf{
+    width: 100000px !important;
+}
+ul.cf li {
+    position: relative;
+}
+
+#listBox ul.cf li p {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+
+#picBox ul.cf a {
+    display: block;
+    width: 680px;
+    height: 330px;
+    position: absolute;
+    color: #fff;
+}
+
+#picBox ul li .rank {
+    float: left;
+    display: block;
+    width: 700px;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 15px;
+}
+#picBox ul li .rank h2{
+    font-size: 16px;
+    line-height: 24px;
+    color: #4298e1;
+    text-align: center;
+    font-weight: normal;
+}
+#picBox ul.cf li .rank p{
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+    text-align: center;
+}
+.picBox ul.cf li .rank-list{
+    font-size: 12px;
+    overflow: hidden;
+}
+.picBox ul.cf li .rank-list  ul{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.picBox ul.cf li .rank-list  ul  li{
+    color: #666;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    float: left;
+}
+.picBox ul.cf li .rank-list ul li span{
+    margin-right: 10px;
+}
+.picBox ul.cf li .rank-list ul li span.num{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: #bbb;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+.picBox ul.cf li .rank-list ul li span.top{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: #70b900;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+.picBox ul.cf li .rank-list ul li i{
+    font-weight: normal;
+    float: right;
+    margin-right: 40px;
+    padding-left: 20px;
+    font-style: normal;
+    color: #888;
+    background: url("../images/sorting.png") no-repeat;
+}
+.picBox ul.cf li .rank-list ul li i.sorting_up{
+    background-position: 0 9px;
+}
+.picBox ul.cf li .rank-list ul li i.sorting_down{
+    background-position: 0 -15px;
+}
+.picBox ul.cf li .rank-list ul li i.sorting_none{
+    background-position: 0 -38px;
+}
+
+.picBox {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.picBox ul.cf {
+    height: 330px;
+    position: absolute;
+}
+
+.listBox {
+    width: 600px;
+    height: 85px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 0 0 0;
+}
+
+.listBox ul {
+    position: absolute;
+}
+
+.listBox ul li {
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 12px;
+    text-align: center;
+}
+.listBox ul li span{
+    font-size: 40px;
+    color: #bbb;
+    transition: all .2s linear;
+    border: 1px solid #eee;
+    padding: 5px;
+    background: #fff;
+    width: 50px;
+    text-align: center;
+}
+.listBox ul.cf li.on span{
+    color: #70b900;
+    border: 1px solid #70b900;
+}
+.listBox ul.cf li.on p{
+    color: #3d97e1 !important;
+}
+.listBox ul.cf li i {
+    display: none;
+}
+
+.listBox ul.cf li a {
+    display: block;
+    width: 124px;
+    height: 70px;
+}
+
+#picBox ul li .datainfo{
+    position: absolute;
+    top: 300px;
+    float: right;
+    width: 600px;
+    margin-left: 15px;
+
+}
+#picBox ul li .datainfo ul{
+    width: 600px;
+}
+#picBox ul li .datainfo ul li{
+    float: left;
+    line-height: 24px;
+    width: 50%;
+    color: #888;
+    height: 24px !important;
+}
+#picBox ul li .datainfo ul li:before{
+    content: "\f046";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    font-size: 18px;
+    margin-top: 6px;
+    position: relative;
+    top: 3px;
+    color: #70b900;
+}
+.data-title{
+    margin-bottom: 10px;
+}
+.datanow{
+    position: absolute;
+    top: 15px;
+    z-index: 9000;
+    right: 0;
+}
+
+.dashboard {
+
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: 10px 0;
+    float: left;
+}
+
+.dashboard:after{
+    content: "";
+    -webkit-animation-name: scale;
+    -moz-animation-name: scale;
+    -o-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation: scale 3s linear infinite forwards;
+    -o-animation: scale 3s linear infinite forwards;
+    animation: scale 3s linear infinite forwards;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100%;
+    z-index: 1;
+    background-color: #93c400;
+    box-shadow: 0 0 5px #ccc;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+@-o-keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+.dashboard .dashboard-main {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 20%;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #FFF;
+}
+.dashboard .b-t{
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+    font-size: 12px;
+    color: #aaa;
+}
+.dashboard .stat-count{
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 800;
+    color: #4298e1;
+}
+.dashboard .b-b{
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 100%;
+    color: #70b900;
+    font-size: 12px;
+}
+.dashboard-right-list{
+    margin: 30px 0 0 40px;
+    float: left;
+    overflow: hidden;
+}
+.dashboard-right-list ul{
+    overflow: hidden;
+    height: 114px;
+    width: 500px;
+}
+.dashboard-right-list ul li{
+    box-sizing: border-box;
+    width: 500px;
+    float: left;
+}
+.data-item
+{
+    width: 170px;
+    float: left;
+    margin: 10px 0;
+    padding-left: 50px;
+    background: url("../images/sprite_icon.png") no-repeat;
+}
+.item-bg-1{
+    background-position: 0 0;
+}
+.item-bg-2{
+    background-position: 0 -53px;
+}
+.item-bg-3{
+    background-position: 2px -109px;
+}
+.item-bg-4{
+     background-position: 0 -167px;
+}
+.item-bg-5{
+    background-position: 0 -224px;
+}
+.item-bg-6{
+    background-position: 0 -288px;
+}
+.item-bg-7{
+    background-position: 4px -351px;
+}
+.item-bg-8{
+    background-position: 2px -418px;
+}
+.item-bg-9{
+    background-position: 0 -482px;
+}
+.item-bg-10{
+    background-position: 0 -537px;
+}
+.item-left{
+    width: 170px;
+    float: left;
+}
+.item-left p{
+    color: #666;
+}
+.item-left h5{
+    color: #4298e1;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+}
+.item-left h5 span{
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.resourcesBox-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 360px;
+    background: url("../images/rsrbg.png") no-repeat bottom;
+    height: 325px;
+}
+.resourcesBox-right h5{
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: normal;
+}
+.resourcesBox-right p{
+    font-size: 12px;
+    color: #666;
+    line-height: 32px;
+}
+.resourcesBox-right p span{
+    font-size: 16px;
+    color: #4298e1;
+    margin-right: 10px;
+}
+.tech{
+    margin: 20px auto 0 auto;
+    border-top: 1px dotted #ccc;
+    padding: 15px 0 0 0;
+    width: 1100px;
+}
+.tech h5,
+.logo-list h5{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.tech ul{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.tech ul li{
+    width: 220px;
+    float: left;
+    margin-right: 73px;
+}
+.tech ul li:last-child{
+    margin-right: 0;
+}
+.tech ul li h5{
+    font-size: 16px;
+    color: #4298e1;
+    font-weight: 400;
+    margin: 10px 0;
+    font-weight: normal;
+}
+.tech ul li p{
+    line-height: 20px;
+}
+.tech ul li p:before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #666;
+    float: left;
+    margin: 8px 5px 0 0;
+}
+.logo-list{
+    margin: 0 auto 20px auto;
+    border-top: 1px dotted #ccc;
+    padding: 15px 0;
+    width: 1100px;
+    overflow: hidden;
+}
+.logo-list ul li{
+    float: left;
+    width: 120px;
+}
